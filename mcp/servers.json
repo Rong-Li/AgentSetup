@@ -1,0 +1,10 @@
+{
+  "_comment": "MCP servers for every agent. No secrets here; put them in ~/.config/agents/secrets.env and reference them as ${NAME} in args. After editing run ~/.agents/bin/mcp-sync.sh --dry-run && ~/.agents/bin/mcp-sync.sh.",
+  "mcpServers": {
+    "fetch": {
+      "_comment": "Example (Pattern A). Delete it if you don't want it; pin a version you've reviewed.",
+      "command": "$HOME/.agents/mcp/bin/with-secrets",
+      "args": ["uvx", "mcp-server-fetch"]
+    }
+  }
+}
