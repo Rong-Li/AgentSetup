@@ -1,0 +1,6 @@
+.DS_Store
+*.bak
+.env
+*.env
+secrets*
+!templates/secrets.env.example
